@@ -30,7 +30,6 @@ Function Set-ESXiPassword {
          "*not currently connected*" { Write-Output "It wasn't possible to connect to '$HostName'"; break }
          "*weak password*" { Write-Output "Failed to execute script correctly against Host '$HostName' for the account '$UserName'. It appears the new password did not meet the password complexity requirements on the host."; break }
          "*" { write-output $error[0].Exception.ToString().ToLower(); break }
-         #Add other wildcard matches here as required
          default { Write-Output "Got here" }
       }
    }
