@@ -1,4 +1,8 @@
 
+This was originally posted on https://forums.clickstudios.com.au/topic/15015-password-resetting-for-esxi-hosts/
+In referece to the enterprise password management tool known as Passwordstate
+
+
 I was recently tasked in finding a solution for resetting root passwords for 800+ VMWare ESXi hosts and if Passwordstate would be able to facilitate this. 
 
 I initially started looking at the built-in Linux scripts which utilises SSH connections, something we have disabled for our ESXi hosts for security.
